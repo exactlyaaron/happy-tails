@@ -2,15 +2,69 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Happy Tails
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+
+    #wrapper
+      h1 HappyTails Arena
+
+      #controls
+
+        select#species
+          option Samurai
+          option Ninja
+          option Berzerker
+          option Mystic
+
+        select#gender
+          option Male
+          option Female
+          option Other
+
+        input#name(type='text' placeholder='Name')
+        input#age(type='text' placeholder='Age')
+
+        select#weapons
+          option Katana
+          option Great Axe
+          option Bow & Arrow
+          option Sorcery
+
+        button#add Add!
+
+      .clear
+
+      #arena
+        h2 FIGHT
+
+      #warriors
+        #div
+          h2 Samurai
+          #samurais
+
+        #div
+          h2 Ninjas
+          #ninjas
+
+        #div
+          h2 Berzerkers
+          #berzerkers
+
+        #div
+          h2 Mystics
+          #mystics
+
+
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
-    script(src='./js/es5/main.js')
     script(src='./js/es6/main.js')
+    script(src='./js/es6/utility.js')
+    script(src='./js/es6/samurai.js')
+    script(src='./js/es6/ninja.js')
+    script(src='./js/es6/berzerker.js')
+    script(src='./js/es6/mystic.js')
