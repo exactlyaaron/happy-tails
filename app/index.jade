@@ -6,7 +6,7 @@ html(lang='en')
     link(rel='stylesheet', href='./css/app.css')
   body
 
-    #wrapper
+    header
       h1 HappyTails Arena
 
       #controls
@@ -22,19 +22,20 @@ html(lang='en')
           option Female
           option Other
 
-        input#name(type='text' placeholder='Name')
-        input#age(type='text' placeholder='Age')
-
         select#weapons
           option Katana
           option Great Axe
           option Bow & Arrow
           option Sorcery
 
+        input#name(type='text' placeholder='Name')
+        input#age(type='text' placeholder='Age')
+
         button#add Add!
 
-      .clear
+    .clear
 
+    #wrapper
       #arena
         h2 FIGHT
 

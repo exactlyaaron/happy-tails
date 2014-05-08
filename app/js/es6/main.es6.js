@@ -61,8 +61,7 @@
 
     let $statsdiv = $('<div class="stats">');
     $statsdiv.append(`<div>Name: <span>${warrior.name}</span></div>
-                      <div>Age: <span>${warrior.age}</span></div>
-                      <div>Gender: <span>${warrior.gender}</span></div>
+                      <div>Age: <span>${warrior.age}</span>  |  Gender: <span>${warrior.gender}</span></div>
                       <div>Health: <span>${warrior.health}%</span></div>
                       <div>Damage: <span>${warrior.damage} pts</span></div>
                       <div><img src=${warrior.weaponImg}><button class="train">TRAIN</button></div>`);
